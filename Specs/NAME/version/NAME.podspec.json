@@ -1,0 +1,33 @@
+{
+  "name": "{NAME}",
+  "version": "{VERSION}",
+  "summary": "{SUMMARY}",
+  "homepage": "{HOMEPAGE}",
+  "license": {
+    "type": "Copyright",
+    "text": "{COPYRIGHT_TEXT}"
+  },
+  "authors": {
+    "{AUTHOR}": "{AUTHOR_EMAIL}",
+    "BB9z": "bb9z@me.com"
+  },
+  "source": {
+    "http": "https://github.com/PBPods/PB{NAME}/releases/download/{VERSION}/{NAME}_{VERSION}.zip",
+    "sha1": "{HASH}"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "public_header_files": "include/*.{h}",
+  "ios": {
+    "vendored_frameworks": "*.framework",
+    "vendored_libraries": "lib/*.a",
+    "frameworks": [
+      "UIKit"
+    ]
+  },
+  "libraries": [
+    "z"
+  ]
+}
+// https://guides.cocoapods.org/syntax/podspec.html
